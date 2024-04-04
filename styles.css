@@ -7,12 +7,16 @@ html {
     font-family: "Montserrat", serif;
 }
 
+body {
+    margin: 0;
+}
+
 main {
     width: 65vw;
-    min-width: 300px;
+    min-width: 560px;
     /*- mobilnézetben teljesen töltse ki*/
     min-height: 500px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 30px 90px;
     margin: 2rem auto auto;
     border-radius: 1.5rem;
 }
@@ -25,20 +29,36 @@ main {
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .main-header-title {
     position: absolute;
-    width: 100%;
+    width: 40vw;
+    min-width: 200px;
     height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: 4rem;
-    text-transform: uppercase;
+    justify-content: center;
     margin: 0;
+}
+
+.main-header-title h1 {
     font-weight: 900;
     color: var(--blue);
+    text-transform: uppercase;
+    font-size: calc(24px + 3vw);
+    margin: 0;
+}
+
+.main-header-title h2 {
+    margin: 0;
+    font-weight: 300;
+    font-style: italic;
+    font-size: calc(12px + 1vw);
+    text-align: center;
 }
 
 .main-body {
