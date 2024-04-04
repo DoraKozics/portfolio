@@ -95,7 +95,7 @@ main {
 .main-projects {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     padding: 2rem;
     flex-wrap: wrap;
     gap: 2rem;
@@ -103,7 +103,6 @@ main {
 
 .main-projects-card {
     width: 250px;
-    height: 300px;
     border-radius: 1rem;
     border: 1px solid var(--yellow);
     padding: 0.5rem;
@@ -142,4 +141,42 @@ main {
 
 .blue-overlay:hover {
     opacity: 0;
+}
+
+.main-projects-card-content {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 14px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-projects-card-content a button {
+    width: 100%;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-family: Montserrat, serif;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+    letter-spacing: 0.3rem;
+}
+
+.pink-bg {
+    background-color: var(--pink);
+}
+
+.purple-bg {
+    background-color: var(--purple);
+}
+
+.pink-bg:hover, .purple-bg:hover {
+    cursor: pointer;
+}
+
+.grey-bg {
+    background-color: var(--grey);
 }
